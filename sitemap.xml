@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://na-ceste-k-bohu.tk/</loc>
-    <lastmod>2022-07-05T13:32:43+02:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>https://na-ceste-k-bohu.tk/posts/</loc>
-    <lastmod>2022-07-05T13:32:43+02:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>https://na-ceste-k-bohu.tk/posts/prijimanie-na-ruku/</loc>
-    <lastmod>2022-07-05T13:32:43+02:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>https://na-ceste-k-bohu.tk/categories/</loc>
-  </url><url>
+  </url>
+  <url>
     <loc>https://na-ceste-k-bohu.tk/tags/</loc>
   </url>
 </urlset>
