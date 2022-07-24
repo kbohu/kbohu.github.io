@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>web-page/</loc>
+    <loc>/</loc>
   </url>
   <url>
-    <loc>web-page/posts/</loc>
+    <loc>posts/</loc>
   </url>
   <url>
-    <loc>web-page/posts/prijimanie-na-ruku/</loc>
-  </url>
-  <url>
-    <loc>web-page/categories/</loc>
-  </url>
-  <url>
-    <loc>web-page/tags/</loc>
+    <loc>posts/prijimanie-na-ruku/</loc>
   </url>
 </urlset>
