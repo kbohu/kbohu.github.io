@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://frantisekfery.github.io/web-page/</loc>
+    <loc>web-page/</loc>
   </url>
   <url>
-    <loc>https://frantisekfery.github.io/web-page/posts/</loc>
+    <loc>web-page/posts/</loc>
   </url>
   <url>
-    <loc>https://frantisekfery.github.io/web-page/posts/prijimanie-na-ruku/</loc>
+    <loc>web-page/posts/prijimanie-na-ruku/</loc>
   </url>
   <url>
-    <loc>https://frantisekfery.github.io/web-page/categories/</loc>
+    <loc>web-page/categories/</loc>
   </url>
   <url>
-    <loc>https://frantisekfery.github.io/web-page/tags/</loc>
+    <loc>web-page/tags/</loc>
   </url>
 </urlset>
