@@ -29,41 +29,27 @@
   </header>
 
   <main>
-    <article class="contact-section">
-      <div class="container">
-        <h1>Kontaktujte nás</h1>
-        <p class="contact-intro">Máte otázku, návrh alebo sa chcete podeliť o svoju skúsenosť? Napíšte nám.</p>
-        
-        <form id="contact-form" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-          <div class="form-group">
-            <label for="name">Meno:</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Predmet:</label>
-            <input type="text" id="subject" name="subject" required>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Správa:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-
-          <button type="submit" class="submit-button">Odoslať správu</button>
-        </form>
-
-        <div class="contact-note">
-          <p>* Všetky polia sú povinné</p>
-          <p>Vaše osobné údaje budú použité len na účely odpovede na vašu správu.</p>
-        </div>
+    <h1>Kontakt</h1>
+    <p>Ak máte akékoľvek otázky alebo pripomienky, neváhajte nás kontaktovať.</p>
+    
+    <form action="https://formspree.io/f/xoqgkjvr" method="POST">
+      <div class="form-group">
+        <label for="name">Meno:</label>
+        <input type="text" id="name" name="name" required>
       </div>
-    </article>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Správa:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      
+      <button type="submit">Odoslať správu</button>
+    </form>
   </main>
 
   <footer>
