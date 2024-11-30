@@ -1,18 +1,126 @@
 <!DOCTYPE html>
 <html lang="sk">
-  <title>Na ceste k Bohu | Na ceste k Bohu</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/index.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Na ceste k Bohu - Duchovný blog o viere a duchovnom raste</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Duchovný blog zameraný na prehlbovanie katolíckej viery, duchovný rast a lepšie pochopenie liturgie. Články o sviatostiach, modlitbe a duchovnom živote.">
+  <meta name="keywords" content="duchovný blog, katolícka viera, duchovný rast, liturgia, sviatosti, modlitba">
+  <meta name="author" content="Na ceste k Bohu">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="sk-SK">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://nacestekbohu.sk/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nacestekbohu.sk/">
+  <meta property="og:title" content="Na ceste k Bohu - Duchovný blog o viere">
+  <meta property="og:description" content="Duchovný blog zameraný na prehlbovanie katolíckej viery, duchovný rast a lepšie pochopenie liturgie.">
+  <meta property="og:image" content="https://nacestekbohu.sk/pictures/From-Here-to-Faith.jpg">
+  <meta property="og:site_name" content="Na ceste k Bohu">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Na ceste k Bohu - Duchovný blog o viere">
+  <meta name="twitter:description" content="Duchovný blog zameraný na prehlbovanie katolíckej viery, duchovný rast a lepšie pochopenie liturgie.">
+  <meta name="twitter:image" content="https://nacestekbohu.sk/pictures/From-Here-to-Faith.jpg">
+  
+  <!-- Preload dôležitých zdrojov -->
+  <link rel="preload" href="/css/index.min.css" as="style">
+  <link rel="preload" href="/js/main.js" as="script">
+  <link rel="preload" href="/pictures/From-Here-to-Faith.jpg" as="image" type="image/jpeg">
+  
+  <!-- Štýly a skripty -->
+  <link rel="stylesheet" href="/css/index.min.css">
+  <script src="/js/main.js" defer></script>
+  <script src="/js/interactive.js" defer></script>
+  
+  <!-- PWA manifest -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#68f">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Na ceste k Bohu",
+    "url": "https://nacestekbohu.sk",
+    "description": "Duchovný blog zameraný na duchovný rast a prehlbovanie viery prostredníctvom zdieľania myšlienok a skúseností.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://nacestekbohu.sk/hladat?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
 
+<body>
   <header>
-    <a href="/" class="title">Na ceste k Bohu</a>
+    <nav aria-label="Hlavná navigácia">
+      <a href="/" class="title" aria-label="Domovská stránka">Na ceste k Bohu</a>
+      <ul id="main-menu" class="nav-links">
+        <li><a href="/clanky.html">Články</a></li>
+        <li><a href="/kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <article>
-    <img src="pictures/From-Here-to-Faith.jpg" alt="From Here to Faith">
-    <div class="container">
-      <a href="prijimanie-na-ruku/">Prijímanie na ruku</a>
+  <main class="container">
+    <div class="main-image">
+      <img src="./pictures/From-Here-to-Faith.jpg" alt="Prijímanie na ruku - ilustračný obrázok">
     </div>
-  </article>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Na ceste k Bohu. Všetky práva vyhradené.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Registrácia service workera
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/js/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registrovaný:', registration);
+          })
+          .catch(error => {
+            console.log('Service Worker registrácia zlyhala:', error);
+          });
+      });
+    }
+    
+    // Lazy loading obrázkov
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = document.querySelectorAll('img[loading="lazy"]');
+      if ('loading' in HTMLImageElement.prototype) {
+        // Browser podporuje native lazy loading
+        images.forEach(img => {
+          img.src = img.dataset.src;
+        });
+      } else {
+        // Fallback pre staršie prehliadače
+        const script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+        document.body.appendChild(script);
+      }
+    });
+  </script>
+</body>
 </html>

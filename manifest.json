@@ -1,0 +1,26 @@
+{
+  "name": "Na ceste k Bohu",
+  "short_name": "Na ceste k Bohu",
+  "description": "Duchovný blog zameraný na prehlbovanie viery a duchovný rast",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#68f",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "any",
+  "categories": ["religion", "spirituality", "blog"],
+  "lang": "sk",
+  "dir": "ltr",
+  "prefer_related_applications": false
+}
